@@ -1,139 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
+    --rosa-claro: #ffb6c1;
+    --rosa-forte: #ff69b4;
+    --vermelho: #d63447;
 }
 
 body {
-    font-size: 1rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff0f5;
+    background-image: url('img/coracoes-fundo.png');
+    background-size: 150px;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: var(--vermelho);
+    color: white;
 }
 
-
-section {
-    padding-bottom: 5rem;
+.logo-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
 }
-
 
 .nav-link {
-    color: #CB6D43;
-    font-weight: 600;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--rosa-claro);
 }
 
 .inicio-fundo {
-    /* aula 3 */
-    background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
+    background-image: url('img/fundo-doces.jpg');
     background-size: cover;
-    background-position: right;
-    border-radius: 80px;
-    width: 100%;
-    height: 606px;
+    background-position: center;
+    border-radius: 20px;
     padding: 40px;
-    margin: 0 auto;
+    min-height: 400px;
 }
-
-/* posicionamento para a imagem à direita */
-.img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
-}
-
-
-.esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
 
 .botao-inicio {
-    background-color: var(--laranja-claro);
-    border-radius: 30px;
+    background-color: var(--rosa-forte);
     border: none;
-    width: 14em;
-    height: 3em;
-    align-content: center;
-
+    color: white;
 }
 
-.display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+.botao-inicio:hover {
+    background-color: var(--vermelho);
 }
-
-
-#tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
-}
-
-#tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
-}
-
 
 h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
-}
-
-#galeria {
-    background-color: #FAF4F4;
-
-}
-
-.fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
-    background-size: 180px 180px;
-}
-
-#contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
+    font-family: 'Pacifico', cursive;
+    color: var(--vermelho);
 }
 
 .formulario {
-    background-color: #ffffff;
+    background-color: white;
     padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
-    border-radius: 10px;
-    /* Borda arredondada para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
-    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.4);
 }
 
-.formulario button {
-    background-color: #CB6D43;
-    border: none;
-    font-weight: bold;
-}
-
-.form-control {
-    background-color: #F1EDEF;
+footer {
+    background-color: var(--rosa-forte);
+    color: white;
 }
